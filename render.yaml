@@ -1,0 +1,20 @@
+# Render service definitions for shophud
+# Adjust names and plans in the Render dashboard as needed.
+
+services:
+  - type: web
+    name: shophud-backend
+    env: docker
+    plan: free
+    repo: https://github.com/odionmurphy/shophud
+    branch: main
+    root: backend
+
+staticSites:
+  - name: shophud-frontend
+    repo: https://github.com/odionmurphy/shophud
+    branch: main
+    root: frontend
+    buildCommand: npm run build
+    publishPath: dist
+    plan: free
