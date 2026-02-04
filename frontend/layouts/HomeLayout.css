@@ -1,0 +1,17 @@
+/* Home Layout */
+.home-nav {
+  background: #93c5fd;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+}
+
+.home-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-nav a:hover {
+  text-decoration: underline;
+}

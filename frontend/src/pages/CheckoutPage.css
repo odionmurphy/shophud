@@ -1,0 +1,181 @@
+/* Checkout Page */
+.checkout-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.checkout-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.checkout-empty-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.checkout-empty-text {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.checkout-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-row-full {
+  grid-column: 1 / -1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.form-input,
+.form-select {
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.form-row-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.checkout-summary {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  color: #4b5563;
+}
+
+.summary-divider {
+  border-top: 1px solid #d1d5db;
+  margin: 1rem 0;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.checkout-button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.checkout-button:hover {
+  background: #1e40af;
+}
+
+.checkout-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-summary {
+    position: static;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-container {
+    padding: 1rem;
+  }
+}
