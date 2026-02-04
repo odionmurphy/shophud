@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { productService } from "../services/api";
 import { useCartStore } from "../store";
 import { FiShoppingCart } from "react-icons/fi";
@@ -13,7 +13,6 @@ export const ProductDropdown: React.FC = () => {
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
   const [categories, setCategories] = useState<string[]>([]);
   const { addToCart } = useCartStore();
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
