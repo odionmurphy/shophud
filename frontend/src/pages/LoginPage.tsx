@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiMail, FiLock } from "react-icons/fi";
 
 export const LoginPage: React.FC = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",

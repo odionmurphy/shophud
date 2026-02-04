@@ -5,7 +5,7 @@ import { useAuthStore } from "../store";
 
 export const ProfilePage: React.FC = () => {
   const navigate = useNavigate();
-  const { user, logout } = useAuthStore();
+  const { logout } = useAuthStore();
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({
     name: "John Doe",

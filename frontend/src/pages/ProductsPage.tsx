@@ -8,7 +8,7 @@ import { useCartStore } from "../store";
 import "./ProductsPage.css";
 
 export const ProductsPage: React.FC = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [products, setProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState(
